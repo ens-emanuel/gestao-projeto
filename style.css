@@ -1,0 +1,221 @@
+/* Cores */
+:root {
+    --cor-primaria: #0F5132;
+    --cor-accent: #198754;
+    --cor-accent-hover: #146c43;
+    --fundo-site: #F4F7F6;
+    --fundo-card: #FFFFFF;
+    --texto-escuro: #212529;
+    --texto-claro: #495057;
+    --borda: #DEE2E6;
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+/* Cabeça */
+header {
+    background-color: var(--fundo-card);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--cor-primaria); /* Adicionada uma linha verde no topo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto-escuro);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-accent);
+}
+
+/* grids e cards */
+.secao {
+    padding: 80px 5%;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: var(--fundo-site);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--fundo-card);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid var(--borda);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(15, 81, 50, 0.15); /* Sombra levemente esverdeada */
+    border-color: var(--cor-accent);
+}
+
+.img-placeholder {
+    background-color: #E9ECEF;
+    height: 220px;
+    width: 100%;
+}
+
+.card h3 {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+}
+
+/* Pagina inicial */
+.hero {
+    background-color: var(--cor-primaria);
+    color: #FFF;
+    text-align: center;
+    border-bottom: 5px solid var(--cor-accent); /* Detalhe vibrante dividindo a seção */
+}
+.hero .titulo-secao {
+    color: #FFF;
+}
+.hero .card {
+    color: var(--texto-escuro);
+}
+.hero .card h3 {
+    color: var(--texto-escuro);
+} 
+
+/* Produto */
+.container-produto {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    background: var(--fundo-card);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid var(--borda);
+}
+
+.img-produto {
+    flex: 1;
+    background-color: #E9ECEF;
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+.info-produto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-produto h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--cor-primaria);
+}
+
+.info-produto .desc {
+    color: var(--texto-claro);
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.preco {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--cor-accent); /* Preço em verde vibrante */
+    margin-bottom: 30px;
+}
+
+.frete {
+    background-color: var(--fundo-site);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid var(--borda);
+}
+
+.frete input {
+    padding: 12px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    outline: none;
+    width: 60%;
+    font-size: 1rem;
+}
+
+.frete input:focus {
+    border-color: var(--cor-accent);
+}
+
+.btn {
+    background-color: var(--cor-accent);
+    color: #FFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--cor-accent-hover);
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

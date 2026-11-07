@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portão Customizado - Gates N Fences</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <span class="sr-only">Página do produto Portão Customizado de Entrada com cálculo de frete e solicitação de orçamento.</span>
+
+    <header>
+        <a href="index.html" class="logo" aria-label="Gates N Fences - Ir para página inicial">Gates N Fences</a>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portoes.html">Portões</a></li>
+                <li><a href="#">Segurança</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="secao">
+        <div class="container-produto">
+            <div class="img-produto" role="img" aria-label="Foto detalhada do Portão Customizado de Entrada"></div>
+            
+            <div class="info-produto">
+                <h1>Portão Customizado de Entrada</h1>
+                <p class="desc">Desenvolvido sob medida para a fachada do seu imóvel. Utilizamos aço galvanizado de alta resistência, pintura eletrostática premium e automação embutida. Garantia de segurança, privacidade e design exclusivo.</p>
+                
+                <div class="preco" aria-label="Preço: R$ 3.450,00">R$ 3.450,00</div>
+                
+                <div class="frete">
+                    <p style="margin-bottom: 15px; font-weight: 700; color: var(--cor-primaria);">Calcule o frete e prazo de entrega:</p>
+                    <input type="text" placeholder="Digite seu CEP (ex: 00000-000)" aria-label="Digite o seu CEP completo para calcular o frete">
+                    <button class="btn" aria-label="Calcular valor do frete">Calcular</button>
+                </div>
+                
+                <button class="btn btn-comprar" aria-label="Solicitar orçamento para Portão Customizado de Entrada">Solicitar Orçamento</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
